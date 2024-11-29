@@ -1,0 +1,7 @@
+#!/bin/bash
+mysql -u root -pPass@123 <<EOF
+create database facebook;
+use facebook;
+create table user(id int not null primary key auto_increment,name vrchar(200),address varchar(200));
+insert into user values("rujith","pune");
+EOF
